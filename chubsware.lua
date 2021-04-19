@@ -1075,3 +1075,11 @@ local function ao()
     M:Connect(R)
 end
 coroutine.wrap(ao)()
+local mouse = game.Players.LocalPlayer:GetMouse()
+mouse.KeyDown:connect(
+    function(aq)
+        if aq == "c" then
+            game.Players.LocalPlayer.Character:BreakJoints()
+        end
+    end
+)
