@@ -4,57 +4,65 @@ local c = Instance.new("TextLabel")
 local d = Instance.new("Frame")
 local e = Instance.new("Frame")
 local f = Instance.new("TextButton")
-local g = Instance.new("Frame")
+local g = Instance.new("TextButton")
 local h = Instance.new("TextButton")
-local i = Instance.new("Frame")
-local j = Instance.new("TextButton")
-local k = Instance.new("Frame")
+local i = Instance.new("TextButton")
+local j = Instance.new("TextLabel")
+local k = Instance.new("TextButton")
 local l = Instance.new("TextButton")
-local m = Instance.new("Frame")
-local n = Instance.new("Frame")
-local o = Instance.new("TextButton")
-local p = Instance.new("Frame")
+local m = Instance.new("TextButton")
+local n = Instance.new("TextButton")
+local o = Instance.new("Frame")
+local p = Instance.new("TextButton")
 local q = Instance.new("TextBox")
 local r = Instance.new("Frame")
 local s = Instance.new("TextBox")
 local t = Instance.new("TextButton")
-local u = Instance.new("Frame")
-local v = Instance.new("TextButton")
+local u = Instance.new("TextButton")
+local v = Instance.new("TextLabel")
 local w = Instance.new("Frame")
-local x = Instance.new("Frame")
-local y = Instance.new("TextButton")
-local z = Instance.new("Frame")
-local A = Instance.new("TextLabel")
+local x = Instance.new("TextButton")
+local y = Instance.new("TextLabel")
+local z = Instance.new("TextButton")
+local A = Instance.new("TextButton")
 local B = Instance.new("TextButton")
-local C = Instance.new("Frame")
-local D = Instance.new("TextButton")
-local E = Instance.new("Frame")
-local F = Instance.new("TextButton")
-local G = Instance.new("Frame")
-local H = Instance.new("TextButton")
-local I = Instance.new("TextButton")
-local J = Instance.new("TextButton")
-local K = Instance.new("TextButton")
-local L = Instance.new("TextLabel")
+local C = Instance.new("TextButton")
+local E = Instance.new("TextButton")
+local F = Instance.new("TextLabel")
+local G = Instance.new("ScreenGui")
+local H = Instance.new("Frame")
+local I = Instance.new("TextLabel")
+local J = Instance.new("TextLabel")
+local K = Instance.new("TextLabel")
+G.Name = "WatermarkTab"
+G.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+G.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+G.ResetOnSpawn = false
 a.Name = "Floppaware"
 a.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 a.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 a.ResetOnSpawn = false
 b.Name = "Gui"
 b.Parent = a
-b.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-b.BorderColor3 = Color3.fromRGB(64, 66, 61)
-b.BorderSizePixel = 2
-b.Position = UDim2.new(0.802590966, 0, 0.505300343, 0)
-b.Size = UDim2.new(0, 300, 0, 344)
-c.Name = "floppaware"
+b.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+b.BorderColor3 = Color3.fromRGB(144, 110, 255)
+b.Position = UDim2.new(0.802590966, 0, 0.439340413, 0)
+b.Size = UDim2.new(0, 300, 0, 400)
+H.Name = "WatermarkFrame"
+H.Parent = G
+H.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+H.BorderColor3 = Color3.fromRGB(144, 110, 255)
+H.Position = UDim2.new(0.864281297, 0, 0.0129564106, 0)
+H.Size = UDim2.new(0, 200, 0, 20)
+H.Visible = false
+c.Name = "chubsware"
 c.Parent = b
 c.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
 c.BackgroundTransparency = 1.000
 c.BorderSizePixel = 0
 c.Size = UDim2.new(0, 300, 0, 20)
 c.Font = Enum.Font.Code
-c.Text = "Floppaware"
+c.Text = ""
 c.TextColor3 = Color3.fromRGB(225, 225, 225)
 c.TextSize = 15.000
 c.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
@@ -62,20 +70,20 @@ c.TextStrokeTransparency = 0.000
 d.Parent = b
 d.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 d.BorderSizePixel = 0
-d.Position = UDim2.new(0.0333333351, 0, 0.0630000308, 0)
-d.Size = UDim2.new(0, 280, 0, 312)
+d.Position = UDim2.new(0.0333333351, 0, 0.0524999984, 0)
+d.Size = UDim2.new(0, 280, 0, 370)
 e.Name = "Frame2"
 e.Parent = d
-e.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+e.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 e.BorderSizePixel = 0
-e.Position = UDim2.new(0.0357142873, 0, 0.470928878, 0)
-e.Size = UDim2.new(0, 123, 0, 153)
+e.Position = UDim2.new(0.524999976, 0, 0.0276857112, 0)
+e.Size = UDim2.new(0, 123, 0, 280)
 f.Name = "Rejoin"
 f.Parent = e
 f.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 f.BorderSizePixel = 0
-f.Position = UDim2.new(0.0894308984, 0, 0.786669135, 0)
-f.Size = UDim2.new(0, 100, 0, 25)
+f.Position = UDim2.new(0.0859275758, 0, 0.414487362, 0)
+f.Size = UDim2.new(0, 100, 0, 23)
 f.Font = Enum.Font.Code
 f.Text = "Rejoin"
 f.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -84,47 +92,41 @@ f.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
 f.TextStrokeTransparency = 0.000
 f.MouseButton1Down:connect(
     function()
-        local M = game:GetService("TeleportService")
-        local N = game:GetService("Players").LocalPlayer
-        M:Teleport(game.PlaceId, N)
+        local L = game:GetService("TeleportService")
+        local M = game:GetService("Players").LocalPlayer
+        L:Teleport(game.PlaceId, M)
     end
 )
-g.Name = "Rejoin"
-g.Parent = f
-g.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+g.Name = "Serverhop"
+g.Parent = e
+g.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 g.BorderSizePixel = 0
-g.Position = UDim2.new(-0.00430908194, 0, 0, 0)
-g.Size = UDim2.new(0, 3, 0, 25)
-h.Name = "Serverhop"
-h.Parent = e
-h.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-h.BorderSizePixel = 0
-h.Position = UDim2.new(0.0894308984, 0, 0.56022346, 0)
-h.Size = UDim2.new(0, 100, 0, 25)
-h.Font = Enum.Font.Code
-h.Text = "Serverhop"
-h.TextColor3 = Color3.fromRGB(255, 255, 255)
-h.TextSize = 14.000
-h.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
-h.TextStrokeTransparency = 0.000
-h.MouseButton1Down:connect(
+g.Position = UDim2.new(0.08130081, 0, 0.298572659, 0)
+g.Size = UDim2.new(0, 100, 0, 23)
+g.Font = Enum.Font.Code
+g.Text = "Serverhop"
+g.TextColor3 = Color3.fromRGB(255, 255, 255)
+g.TextSize = 14.000
+g.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
+g.TextStrokeTransparency = 0.000
+g.MouseButton1Down:connect(
     function()
         repeat
             wait()
         until game:IsLoaded() and game.Players.LocalPlayer
-        local M, N = game:GetService "HttpService", game:GetService "TeleportService"
+        local L, M = game:GetService "HttpService", game:GetService "TeleportService"
         local O =
-            M:JSONDecode(
+            L:JSONDecode(
             game:HttpGet(
                 "https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100"
             )
         )
         function joinNew()
             if not isfile("servers.sss") then
-                writefile("servers.sss", M:JSONEncode({}))
+                writefile("servers.sss", L:JSONEncode({}))
             end
             local P = readfile("servers.sss")
-            P = M:JSONDecode(P)
+            P = L:JSONDecode(P)
             for Q, R in next, O["data"] do
                 if R ~= game.JobId then
                     local S = true
@@ -135,7 +137,7 @@ h.MouseButton1Down:connect(
                     end
                     if S then
                         table.insert(P, R["id"])
-                        writefile("servers.sss", M:JSONEncode(P))
+                        writefile("servers.sss", L:JSONEncode(P))
                         wait()
                         return R["id"]
                     end
@@ -144,33 +146,27 @@ h.MouseButton1Down:connect(
         end
         local V = joinNew()
         if not V then
-            writefile("servers.sss", M:JSONEncode({}))
+            writefile("servers.sss", L:JSONEncode({}))
             local V = joinNew()
-            N:TeleportToPlaceInstance(game.PlaceId, V)
+            M:TeleportToPlaceInstance(game.PlaceId, V)
         else
-            N:TeleportToPlaceInstance(game.PlaceId, V)
+            M:TeleportToPlaceInstance(game.PlaceId, V)
         end
     end
 )
-i.Name = "Serverhop"
-i.Parent = h
-i.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
-i.BorderSizePixel = 0
-i.Position = UDim2.new(-0.00430908194, 0, 0, 0)
-i.Size = UDim2.new(0, 3, 0, 25)
-j.Name = "Noclip"
-j.Parent = e
-j.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-j.BorderSizePixel = 0
-j.Position = UDim2.new(0.0894308984, 0, 0.323381394, 0)
-j.Size = UDim2.new(0, 100, 0, 25)
-j.Font = Enum.Font.Code
-j.Text = "Noclip"
-j.TextColor3 = Color3.fromRGB(255, 255, 255)
-j.TextSize = 14.000
-j.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
-j.TextStrokeTransparency = 0.000
-j.MouseButton1Click:Connect(
+h.Name = "Noclip"
+h.Parent = e
+h.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+h.BorderSizePixel = 0
+h.Position = UDim2.new(0.0859275758, 0, 0.174330905, 0)
+h.Size = UDim2.new(0, 100, 0, 23)
+h.Font = Enum.Font.Code
+h.Text = "Noclip"
+h.TextColor3 = Color3.fromRGB(255, 255, 255)
+h.TextSize = 14.000
+h.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
+h.TextStrokeTransparency = 0.000
+h.MouseButton1Click:Connect(
     function()
         noclip = false
         game:GetService("RunService").Stepped:connect(
@@ -183,8 +179,8 @@ j.MouseButton1Click:Connect(
         plr = game.Players.LocalPlayer
         mouse = plr:GetMouse()
         mouse.KeyDown:connect(
-            function(M)
-                if M == "g" then
+            function(L)
+                if L == "g" then
                     noclip = not noclip
                     game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
                 end
@@ -192,82 +188,166 @@ j.MouseButton1Click:Connect(
         )
     end
 )
-k.Name = "Noclip"
-k.Parent = j
-k.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
-k.BorderSizePixel = 0
-k.Position = UDim2.new(-0.00430908194, 0, 0, 0)
-k.Size = UDim2.new(0, 3, 0, 25)
-l.Name = "Noseats"
-l.Parent = e
-l.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-l.BorderSizePixel = 0
-l.Position = UDim2.new(0.0894308984, 0, 0.0957506895, 0)
-l.Size = UDim2.new(0, 100, 0, 25)
-l.Font = Enum.Font.Code
-l.Text = "Noseats"
-l.TextColor3 = Color3.fromRGB(255, 255, 255)
-l.TextSize = 14.000
-l.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
-l.TextStrokeTransparency = 0.000
-l.MouseButton1Click:Connect(
+i.Name = "Noseats"
+i.Parent = e
+i.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+i.BorderSizePixel = 0
+i.Position = UDim2.new(0.08130081, 0, 0.055531092, 0)
+i.Size = UDim2.new(0, 100, 0, 23)
+i.Font = Enum.Font.Code
+i.Text = "Noseats"
+i.TextColor3 = Color3.fromRGB(255, 255, 255)
+i.TextSize = 14.000
+i.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
+i.TextStrokeTransparency = 0.000
+i.MouseButton1Click:Connect(
     function()
         workspace.DescendantAdded:Connect(
-            function(M)
-                if M:IsA("Seat") then
+            function(L)
+                if L:IsA("Seat") then
                     wait()
-                    M:Destroy()
+                    L:Destroy()
                 end
             end
         )
-        for N, O in pairs(workspace:GetDescendants()) do
+        for M, O in pairs(workspace:GetDescendants()) do
             if O:IsA("Seat") then
                 O:Destroy()
             end
         end
     end
 )
-m.Name = "Noseats"
-m.Parent = l
-m.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+j.Name = "Misc"
+j.Parent = e
+j.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+j.BorderSizePixel = 0
+j.Size = UDim2.new(0, 35, 0, 15)
+j.Font = Enum.Font.Code
+j.Text = "Misc"
+j.TextColor3 = Color3.fromRGB(217, 217, 217)
+j.TextSize = 13.000
+j.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
+j.TextStrokeTransparency = 0.000
+k.Name = "Healthbar"
+k.Parent = e
+k.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+k.BorderSizePixel = 0
+k.Position = UDim2.new(0.0859275758, 0, 0.650373399, 0)
+k.Size = UDim2.new(0, 100, 0, 23)
+k.Font = Enum.Font.Code
+k.Text = "Healthbar"
+k.TextColor3 = Color3.fromRGB(255, 255, 255)
+k.TextSize = 14.000
+k.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
+k.TextStrokeTransparency = 0.000
+k.MouseButton1Click:Connect(
+    function()
+        while wait() do
+            game:GetService("Players").LocalPlayer.PlayerGui.HUD.HP.Size = UDim2.new(0.09, 10, 0, 10)
+            game:GetService("Players").LocalPlayer.PlayerGui.HUD.HP.Bar.BackgroundColor3 = Color3.fromRGB(255, 100, 100)
+            game:GetService("Players").LocalPlayer.PlayerGui.HUD.HP.Position = UDim2.new(0.35, 0, 0.91, 0)
+            game:GetService("Players").LocalPlayer.PlayerGui.HUD.Stam.Size = UDim2.new(0.09, 10, 0, 10)
+            game:GetService("Players").LocalPlayer.PlayerGui.HUD.Stam.Bar.BackgroundColor3 =
+                Color3.fromRGB(150, 255, 150)
+            game:GetService("Players").LocalPlayer.PlayerGui.HUD.Stam.Position = UDim2.new(0.555, 0, 0.91, 0)
+            game:GetService("Players").LocalPlayer.PlayerGui.HUD.KO.Size = UDim2.new(0.09, 10, 0, 10)
+            game:GetService("Players").LocalPlayer.PlayerGui.HUD.KO.Bar.BackgroundColor3 = Color3.fromRGB(150, 200, 255)
+            game:GetService("Players").LocalPlayer.PlayerGui.HUD.KO.Position = UDim2.new(0.4525, 0, 0.91, 0)
+            wait()
+        end
+    end
+)
+l.Name = "Freecam"
+l.Parent = e
+l.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+l.BorderSizePixel = 0
+l.Position = UDim2.new(0.08130081, 0, 0.531573296, 0)
+l.Size = UDim2.new(0, 100, 0, 23)
+l.Font = Enum.Font.Code
+l.Text = "Freecam [P]"
+l.TextColor3 = Color3.fromRGB(255, 255, 255)
+l.TextSize = 14.000
+l.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
+l.TextStrokeTransparency = 0.000
+l.MouseButton1Click:Connect(
+    function()
+        loadstring(game:HttpGet "https://pastebin.com/raw/a69TiZDm")()
+    end
+)
+m.Name = "Watermark"
+m.Parent = e
+m.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 m.BorderSizePixel = 0
-m.Position = UDim2.new(-0.00430908194, 0, 0, 0)
-m.Size = UDim2.new(0, 3, 0, 25)
-n.Name = "Frame3"
-n.Parent = d
-n.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+m.Position = UDim2.new(0.0859275758, 0, 0.890529752, 0)
+m.Size = UDim2.new(0, 100, 0, 23)
+m.Font = Enum.Font.Code
+m.Text = "Watermark"
+m.TextColor3 = Color3.fromRGB(255, 255, 255)
+m.TextSize = 14.000
+m.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
+m.TextStrokeTransparency = 0.000
+m.MouseButton1Click:Connect(
+    function()
+        if H.Visible == true then
+            H.Visible = false
+        else
+            H.Visible = true
+        end
+    end
+)
+n.Name = "Removehud"
+n.Parent = e
+n.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 n.BorderSizePixel = 0
-n.Position = UDim2.new(0.524999976, 0, 0.705950797, 0)
-n.Size = UDim2.new(0, 123, 0, 81)
-o.Name = "Fov"
-o.Parent = n
-o.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+n.Position = UDim2.new(0.08130081, 0, 0.771024644, 0)
+n.Size = UDim2.new(0, 100, 0, 23)
+n.Font = Enum.Font.Code
+n.Text = "RemoveHUD"
+n.TextColor3 = Color3.fromRGB(255, 255, 255)
+n.TextSize = 14.000
+n.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
+n.TextStrokeTransparency = 0.000
+n.MouseButton1Click:Connect(
+    function()
+        while wait() do
+            game:GetService("Players").LocalPlayer.PlayerGui.HUD.ImageButton.Visible = false
+            game:GetService("Players").LocalPlayer.PlayerGui.HUD.Cash.Visible = false
+            game:GetService("Players").LocalPlayer.PlayerGui.HUD.Mute.Visible = false
+            game:GetService("CoreGui").TopBar.TopBarFrame.LeftFrame.ChatIcon.BadgeContainer.Visible = false
+            game:GetService("CoreGui").TopBar.TopBarFrame.RightFrame.Visible = false
+            wait()
+        end
+    end
+)
+o.Name = "Frame3"
+o.Parent = d
+o.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 o.BorderSizePixel = 0
-o.Position = UDim2.new(0.100000001, 0, 0.587000012, 0)
-o.Size = UDim2.new(0, 100, 0, 25)
-o.Font = Enum.Font.Code
-o.Text = "Change fov"
-o.TextColor3 = Color3.fromRGB(255, 255, 255)
-o.TextSize = 14.000
-o.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
-o.TextStrokeTransparency = 0.000
-o.MouseButton1Click:Connect(
+o.Position = UDim2.new(0.524999976, 0, 0.808143735, 0)
+o.Size = UDim2.new(0, 123, 0, 62)
+p.Name = "Fov"
+p.Parent = o
+p.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+p.BorderSizePixel = 0
+p.Position = UDim2.new(0.102187738, 0, 0.568965793, 0)
+p.Size = UDim2.new(0, 97, 0, 20)
+p.Font = Enum.Font.Code
+p.Text = "Change fov"
+p.TextColor3 = Color3.fromRGB(255, 255, 255)
+p.TextSize = 14.000
+p.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
+p.TextStrokeTransparency = 0.000
+p.MouseButton1Click:Connect(
     function()
         local W = q.Text
         game:GetService("Workspace").Camera.FieldOfView = W
     end
 )
-p.Name = "Fov"
-p.Parent = o
-p.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
-p.BorderSizePixel = 0
-p.Position = UDim2.new(-0.000568847638, 0, 0.0284716804, 0)
-p.Size = UDim2.new(0, 3, 0, 23)
-q.Parent = n
+q.Parent = o
 q.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 q.BorderSizePixel = 0
-q.Position = UDim2.new(0.104801826, 0, 0.153846264, 0)
-q.Size = UDim2.new(0, 98, 0, 24)
+q.Position = UDim2.new(0.104801826, 0, 0.119363718, 0)
+q.Size = UDim2.new(0, 98, 0, 20)
 q.Font = Enum.Font.Code
 q.PlaceholderColor3 = Color3.fromRGB(170, 170, 170)
 q.PlaceholderText = "70"
@@ -277,15 +357,15 @@ q.TextSize = 14.000
 q.TextTransparency = 0.690
 r.Name = "Frame1"
 r.Parent = d
-r.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+r.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 r.BorderSizePixel = 0
-r.Position = UDim2.new(0.0357142873, 0, 0.0989999995, 0)
-r.Size = UDim2.new(0, 124, 0, 108)
+r.Position = UDim2.new(0.0357142873, 0, 0.0287297424, 0)
+r.Size = UDim2.new(0, 125, 0, 115)
 s.Parent = r
 s.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 s.BorderSizePixel = 0
-s.Position = UDim2.new(0.089430891, 0, 0.0833811462, 0)
-s.Size = UDim2.new(0, 100, 0, 25)
+s.Position = UDim2.new(0.105430663, 0, 0.131847113, 0)
+s.Size = UDim2.new(0, 101, 0, 26)
 s.Font = Enum.Font.Code
 s.PlaceholderColor3 = Color3.fromRGB(170, 170, 170)
 s.PlaceholderText = "Id"
@@ -297,628 +377,528 @@ t.Name = "Massplay"
 t.Parent = r
 t.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 t.BorderSizePixel = 0
-t.Position = UDim2.new(0.0974954069, 0, 0.379355371, 0)
-t.Size = UDim2.new(0, 100, 0, 25)
+t.Position = UDim2.new(0.0974951088, 0, 0.415029258, 0)
+t.Size = UDim2.new(0, 100, 0, 26)
 t.Font = Enum.Font.Code
-t.Text = "Massplay"
+t.Text = "Play"
 t.TextColor3 = Color3.fromRGB(255, 255, 255)
 t.TextSize = 14.000
 t.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
 t.TextStrokeTransparency = 0.000
-u.Name = "Massplay"
-u.Parent = t
-u.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+u.Name = "Dupe"
+u.Parent = r
+u.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 u.BorderSizePixel = 0
-u.Position = UDim2.new(-0.00430908194, 0, 0, 0)
-u.Size = UDim2.new(0, 3, 0, 25)
-v.Name = "Dupe"
+u.Position = UDim2.new(0.0974951163, 0, 0.711813211, 0)
+u.Size = UDim2.new(0, 100, 0, 24)
+u.Font = Enum.Font.Code
+u.Text = "Dupe"
+u.TextColor3 = Color3.fromRGB(255, 255, 255)
+u.TextSize = 14.000
+u.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
+u.TextStrokeTransparency = 0.000
+u.MouseButton1Click:Connect(
+    function()
+        loadstring(game:HttpGet "https://pastebin.com/raw/TdfWUhZg")()
+    end
+)
+v.Name = "Massplaytext"
 v.Parent = r
-v.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+v.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 v.BorderSizePixel = 0
-v.Position = UDim2.new(0.0974954069, 0, 0.677503467, 0)
-v.Size = UDim2.new(0, 100, 0, 25)
+v.Size = UDim2.new(0, 60, 0, 15)
 v.Font = Enum.Font.Code
-v.Text = "Dupe"
-v.TextColor3 = Color3.fromRGB(255, 255, 255)
-v.TextSize = 14.000
+v.Text = "Massplay"
+v.TextColor3 = Color3.fromRGB(217, 217, 217)
+v.TextSize = 13.000
 v.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
 v.TextStrokeTransparency = 0.000
-w.Name = "Dupe"
-w.Parent = v
-w.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+w.Name = "Frame4"
+w.Parent = d
+w.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 w.BorderSizePixel = 0
-w.Position = UDim2.new(-0.00430908194, 0, 0, 0)
-w.Size = UDim2.new(0, 3, 0, 25)
-x.Name = "Frame4"
-x.Parent = d
-x.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+w.Position = UDim2.new(0.0392857157, 0, 0.368362188, 0)
+w.Size = UDim2.new(0, 124, 0, 224)
+x.Name = "Bloom"
+x.Parent = w
+x.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 x.BorderSizePixel = 0
-x.Position = UDim2.new(0.521428525, 0, 0.0989999995, 0)
-x.Size = UDim2.new(0, 124, 0, 181)
-y.Name = "Bloom"
-y.Parent = x
-y.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-y.BorderSizePixel = 0
-y.Position = UDim2.new(0.115323067, 0, 0.22193563, 0)
-y.Size = UDim2.new(0, 95, 0, 23)
-y.Font = Enum.Font.Code
-y.Text = "Bloom"
-y.TextColor3 = Color3.fromRGB(255, 255, 255)
-y.TextSize = 14.000
-y.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
-y.TextStrokeTransparency = 0.000
-y.MouseButton1Down:connect(
+x.Position = UDim2.new(0.107258461, 0, 0.0979276374, 0)
+x.Size = UDim2.new(0, 95, 0, 22)
+x.Font = Enum.Font.Code
+x.Text = "Dark"
+x.TextColor3 = Color3.fromRGB(255, 255, 255)
+x.TextSize = 14.000
+x.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
+x.TextStrokeTransparency = 0.000
+x.MouseButton1Down:connect(
     function()
-        local M = game.Lighting
-        local N = Instance.new("Sky")
+        local L = game.Lighting
+        local M = Instance.new("Sky")
         local O = Instance.new("BloomEffect")
         local P = Instance.new("BlurEffect")
-        N.Parent = M
-        N.MoonTextureId = "rbxasset://sky/moon.jpg"
-        N.SkyboxBk = "http://www.roblox.com/asset?id=153258865"
-        N.SkyboxDn = "http://www.roblox.com/asset?id=153259937"
-        N.SkyboxFt = "http://www.roblox.com/asset?id=153258844"
-        N.SkyboxLf = "http://www.roblox.com/asset?id=153258851"
-        N.SkyboxRt = "http://www.roblox.com/asset?id=153258851"
-        N.SkyboxUp = "http://www.roblox.com/asset?id=153259943"
-        N.StarCount = 3000
-        N.SunAngularSize = 21
-        N.SunTextureId = "rbxasset://sky/sun.jpg"
-        O.Parent = M
+        local Q = Instance.new("ColorCorrectionEffect")
+        M.Parent = L
+        M.MoonTextureId = "rbxasset://sky/moon.jpg"
+        M.SkyboxBk = "http://www.roblox.com/asset?id=150283828"
+        M.SkyboxDn = "http://www.roblox.com/asset?id=150283728"
+        M.SkyboxFt = "http://www.roblox.com/asset?id=150283781"
+        M.SkyboxLf = "http://www.roblox.com/asset?id=150283702"
+        M.SkyboxRt = "http://www.roblox.com/asset?id=150283748"
+        M.SkyboxUp = "http://www.roblox.com/asset?id=150283877"
+        M.StarCount = 2256
+        M.SunAngularSize = 21
+        M.SunTextureId = "rbxasset://sky/sun.jpg"
+        O.Parent = L
         O.Intensity = 1
         O.Size = 24
         O.Threshold = 0.5
         O.Enabled = true
-        P.Parent = M
+        P.Parent = L
         P.Enabled = true
         P.Size = 1.5
+        Q.Parent = L
+        Q.Brightness = 0.1
+        Q.Contrast = 0.39
+        Q.Enabled = true
+        Q.Saturation = -0.35
+        Q.TintColor = Color3.fromRGB(154, 154, 154)
     end
 )
-z.Name = "Bloom"
-z.Parent = y
-z.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+y.Name = "Graphics"
+y.Parent = w
+y.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+y.BorderSizePixel = 0
+y.Size = UDim2.new(0, 60, 0, 15)
+y.Font = Enum.Font.Code
+y.Text = "Graphics"
+y.TextColor3 = Color3.fromRGB(217, 217, 217)
+y.TextSize = 13.000
+y.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
+y.TextStrokeTransparency = 0.000
+z.Name = "Sunset"
+z.Parent = w
+z.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 z.BorderSizePixel = 0
-z.Position = UDim2.new(-0.00430972455, 0, 0, 0)
-z.Size = UDim2.new(0, 3, 0, 23)
-A.Name = "Graphics"
-A.Parent = x
-A.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+z.Position = UDim2.new(0.107258461, 0, 0.247025356, 0)
+z.Size = UDim2.new(0, 94, 0, 22)
+z.Font = Enum.Font.Code
+z.Text = "Neptune"
+z.TextColor3 = Color3.fromRGB(255, 255, 255)
+z.TextSize = 14.000
+z.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
+z.TextStrokeTransparency = 0.000
+z.MouseButton1Down:connect(
+    function()
+        local L = game.Lighting
+        local M = Instance.new("Sky")
+        local O = Instance.new("BloomEffect")
+        local P = Instance.new("BlurEffect")
+        local Q = Instance.new("ColorCorrectionEffect")
+        M.Parent = L
+        M.MoonTextureId = "rbxasset://sky/moon.jpg"
+        M.SkyboxBk = "http://www.roblox.com/asset?id=218955819"
+        M.SkyboxDn = "http://www.roblox.com/asset?id=218953419"
+        M.SkyboxFt = "http://www.roblox.com/asset?id=218954524"
+        M.SkyboxLf = "http://www.roblox.com/asset?id=218958493"
+        M.SkyboxRt = "http://www.roblox.com/asset?id=218957134"
+        M.SkyboxUp = "http://www.roblox.com/asset?id=218950090"
+        M.StarCount = 2256
+        M.SunAngularSize = 21
+        M.SunTextureId = "rbxasset://sky/sun.jpg"
+        O.Parent = L
+        O.Intensity = 1
+        O.Size = 24
+        O.Threshold = 0.5
+        O.Enabled = true
+        P.Parent = L
+        P.Enabled = true
+        P.Size = 1.5
+        Q.Parent = L
+        Q.Brightness = 0.01
+        Q.Contrast = 0.39
+        Q.Enabled = true
+        Q.Saturation = -0.35
+        Q.TintColor = Color3.fromRGB(154, 154, 154)
+    end
+)
+A.Name = "Sunset"
+A.Parent = w
+A.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 A.BorderSizePixel = 0
-A.Size = UDim2.new(0, 123, 0, 32)
+A.Position = UDim2.new(0.107258461, 0, 0.546132505, 0)
+A.Size = UDim2.new(0, 94, 0, 22)
 A.Font = Enum.Font.Code
-A.Text = "Graphics"
-A.TextColor3 = Color3.fromRGB(217, 217, 217)
-A.TextSize = 15.000
+A.Text = "Elegant"
+A.TextColor3 = Color3.fromRGB(255, 255, 255)
+A.TextSize = 14.000
 A.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
 A.TextStrokeTransparency = 0.000
-B.Name = "Sunset"
-B.Parent = x
+A.MouseButton1Down:connect(
+    function()
+        local L = game.Lighting
+        local M = Instance.new("Sky")
+        local O = Instance.new("BloomEffect")
+        local P = Instance.new("BlurEffect")
+        local Q = Instance.new("ColorCorrectionEffect")
+        M.Parent = L
+        M.MoonTextureId = "rbxasset://sky/moon.jpg"
+        M.SkyboxBk = "http://www.roblox.com/asset?id=153767241"
+        M.SkyboxDn = "http://www.roblox.com/asset?id=153767216"
+        M.SkyboxFt = "http://www.roblox.com/asset?id=153767266"
+        M.SkyboxLf = "http://www.roblox.com/asset?id=153767200"
+        M.SkyboxRt = "http://www.roblox.com/asset?id=153767231"
+        M.SkyboxUp = "http://www.roblox.com/asset?id=153767288"
+        M.StarCount = 2256
+        M.SunAngularSize = 21
+        M.SunTextureId = "rbxasset://sky/sun.jpg"
+        O.Parent = L
+        O.Intensity = 1
+        O.Size = 24
+        O.Threshold = 0.5
+        O.Enabled = true
+        P.Parent = L
+        P.Enabled = true
+        P.Size = 1.5
+        Q.Parent = L
+        Q.Brightness = 0.01
+        Q.Contrast = 0.39
+        Q.Enabled = true
+        Q.Saturation = -0.35
+        Q.TintColor = Color3.fromRGB(154, 154, 154)
+    end
+)
+B.Name = "Bloom"
+B.Parent = w
 B.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 B.BorderSizePixel = 0
-B.Position = UDim2.new(0.114864223, 0, 0.412661046, 0)
-B.Size = UDim2.new(0, 96, 0, 23)
+B.Position = UDim2.new(0.107258461, 0, 0.397034764, 0)
+B.Size = UDim2.new(0, 95, 0, 22)
 B.Font = Enum.Font.Code
-B.Text = "Sunset"
+B.Text = "SettingSun"
 B.TextColor3 = Color3.fromRGB(255, 255, 255)
 B.TextSize = 14.000
 B.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
 B.TextStrokeTransparency = 0.000
 B.MouseButton1Down:connect(
     function()
-        local M = game.Lighting
-        M.Ambient = Color3.fromRGB(33, 33, 33)
-        M.Brightness = 7.5
-        M.ColorShift_Bottom = Color3.fromRGB(0, 0, 0)
-        M.ColorShift_Top = Color3.fromRGB(255, 247, 237)
-        M.EnvironmentDiffuseScale = 0.105
-        M.EnvironmentSpecularScale = 0.522
-        M.GlobalShadows = true
-        M.OutdoorAmbient = Color3.fromRGB(51, 54, 67)
-        M.ShadowSoftness = 0.04
-        M.GeographicLatitude = -15.525
-        M.ExposureCompensation = 0.75
-        local N = Instance.new("BloomEffect", M)
-        N.Enabled = true
-        N.Intensity = 0.04
-        N.Size = 1900
-        N.Threshold = 0.915
-        local O = Instance.new("ColorCorrectionEffect", M)
-        O.Brightness = 0.176
-        O.Contrast = 0.39
+        local L = game.Lighting
+        local M = Instance.new("Sky")
+        local O = Instance.new("BloomEffect")
+        local P = Instance.new("BlurEffect")
+        local Q = Instance.new("ColorCorrectionEffect")
+        M.Parent = L
+        M.MoonTextureId = "rbxasset://sky/moon.jpg"
+        M.SkyboxBk = "http://www.roblox.com/asset?id=626460377"
+        M.SkyboxDn = "http://www.roblox.com/asset?id=626460216"
+        M.SkyboxFt = "http://www.roblox.com/asset?id=626460513"
+        M.SkyboxLf = "http://www.roblox.com/asset?id=626473032"
+        M.SkyboxRt = "http://www.roblox.com/asset?id=626458639"
+        M.SkyboxUp = "http://www.roblox.com/asset?id=626460625"
+        M.StarCount = 2256
+        M.SunAngularSize = 21
+        M.SunTextureId = "rbxasset://sky/sun.jpg"
+        O.Parent = L
+        O.Intensity = 1
+        O.Size = 24
+        O.Threshold = 0.5
         O.Enabled = true
-        O.Saturation = 0.2
-        O.TintColor = Color3.fromRGB(255, 202, 255)
-        local P = Instance.new("DepthOfFieldEffect", M)
+        P.Parent = L
         P.Enabled = true
-        P.FarIntensity = 0.077
-        P.FocusDistance = 21.54
-        P.InFocusRadius = 20.77
-        P.NearIntensity = 0.277
-        local Q = Instance.new("ColorCorrectionEffect", M)
-        Q.Brightness = 0
-        Q.Contrast = -0.07
-        Q.Saturation = 0
+        P.Size = 1.5
+        Q.Parent = L
+        Q.Brightness = 0.01
+        Q.Contrast = 0.39
         Q.Enabled = true
-        Q.TintColor = Color3.fromRGB(255, 247, 239)
-        local R = Instance.new("ColorCorrectionEffect", M)
-        R.Brightness = 0.2
-        R.Contrast = 0.45
-        R.Saturation = -0.1
-        R.Enabled = true
-        R.TintColor = Color3.fromRGB(255, 255, 255)
-        local S = Instance.new("SunRaysEffect", M)
-        S.Enabled = true
-        S.Intensity = 0.01
-        S.Spread = 0.146
+        Q.Saturation = -0.35
+        Q.TintColor = Color3.fromRGB(154, 154, 154)
     end
 )
-C.Name = "Sunset"
-C.Parent = B
-C.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+C.Name = "Night"
+C.Parent = w
+C.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 C.BorderSizePixel = 0
-C.Position = UDim2.new(-0.00430933619, 0, 0, 0)
-C.Size = UDim2.new(0, 3, 0, 23)
-D.Name = "soon1"
-D.Parent = x
-D.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-D.BorderSizePixel = 0
-D.Position = UDim2.new(0.115322977, 0, 0.594981492, 0)
-D.Size = UDim2.new(0, 95, 0, 25)
-D.Font = Enum.Font.Code
-D.Text = "Soon..."
-D.TextColor3 = Color3.fromRGB(255, 255, 255)
-D.TextSize = 14.000
-D.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
-D.TextStrokeTransparency = 0.000
-E.Name = "soon1"
-E.Parent = D
-E.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+C.Position = UDim2.new(0.107258461, 0, 0.845239639, 0)
+C.Size = UDim2.new(0, 94, 0, 22)
+C.Font = Enum.Font.Code
+C.Text = "Night"
+C.TextColor3 = Color3.fromRGB(255, 255, 255)
+C.TextSize = 14.000
+C.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
+C.TextStrokeTransparency = 0.000
+C.MouseButton1Down:connect(
+    function()
+        getgenv().N = true
+        getgenv().D = false
+        local L, M = game:GetService "Lighting", game:GetService "RunService"
+        M.RenderStepped:Connect(
+            function()
+                if L and L.ClockTime then
+                    if N == true then
+                        L.ClockTime = 3
+                    elseif D == true then
+                        L.ClockTime = 14
+                    end
+                end
+            end
+        )
+    end
+)
+E.Name = "Day"
+E.Parent = w
+E.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 E.BorderSizePixel = 0
-E.Position = UDim2.new(-0.00435300218, 0, 0, 0)
-E.Size = UDim2.new(0, 3, 0, 25)
-F.Name = "soon2"
-F.Parent = x
-F.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-F.BorderSizePixel = 0
-F.Position = UDim2.new(0.115322977, 0, 0.788351655, 0)
-F.Size = UDim2.new(0, 95, 0, 25)
+E.Position = UDim2.new(0.107258461, 0, 0.696141899, 0)
+E.Size = UDim2.new(0, 95, 0, 22)
+E.Font = Enum.Font.Code
+E.Text = "Day"
+E.TextColor3 = Color3.fromRGB(255, 255, 255)
+E.TextSize = 14.000
+E.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
+E.TextStrokeTransparency = 0.000
+E.MouseButton1Down:connect(
+    function()
+        getgenv().N = false
+        getgenv().D = true
+        local L, M = game:GetService "Lighting", game:GetService "RunService"
+        M.RenderStepped:Connect(
+            function()
+                if L and L.ClockTime then
+                    if N == true then
+                        L.ClockTime = 3
+                    elseif D == true then
+                        L.ClockTime = 14
+                    end
+                end
+            end
+        )
+    end
+)
+F.Name = "Insert"
+F.Parent = b
+F.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+F.BackgroundTransparency = 1.000
+F.Position = UDim2.new(0.666666687, 0, 0, 0)
+F.Size = UDim2.new(0, 100, 0, 21)
 F.Font = Enum.Font.Code
-F.Text = "Soon..."
-F.TextColor3 = Color3.fromRGB(255, 255, 255)
-F.TextSize = 14.000
+F.Text = "Insert"
+F.TextColor3 = Color3.fromRGB(191, 191, 191)
+F.TextSize = 15.000
 F.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
-F.TextStrokeTransparency = 0.000
-G.Name = "soon2"
-G.Parent = F
-G.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
-G.BorderSizePixel = 0
-G.Position = UDim2.new(-0.00435341289, 0, 0, 0)
-G.Size = UDim2.new(0, 3, 0, 25)
-H.Name = "Main"
-H.Parent = b
-H.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-H.BorderSizePixel = 0
-H.Position = UDim2.new(0.0333333015, 0, 0.0610465109, 0)
-H.Selectable = false
-H.Size = UDim2.new(0, 70, 0, 20)
-H.Font = Enum.Font.Code
-H.Text = "Main"
-H.TextColor3 = Color3.fromRGB(170, 170, 170)
-H.TextSize = 14.000
-H.TextStrokeColor3 = Color3.fromRGB(40, 40, 40)
-H.TextStrokeTransparency = 0.000
-H.TextWrapped = true
-I.Name = "Esp"
-I.Parent = b
-I.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+I.Name = "Floppaware"
+I.Parent = H
+I.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+I.BackgroundTransparency = 1.000
 I.BorderSizePixel = 0
-I.Position = UDim2.new(0.266666651, 0, 0.0610465109, 0)
-I.Selectable = false
-I.Size = UDim2.new(0, 70, 0, 20)
+I.Position = UDim2.new(0.0499993898, 0, -0.0499995947, 0)
+I.Size = UDim2.new(0, 120, 0, 20)
+I.SizeConstraint = Enum.SizeConstraint.RelativeXX
 I.Font = Enum.Font.Code
-I.Text = "Esp"
-I.TextColor3 = Color3.fromRGB(170, 170, 170)
+I.Text = "chubsware"
+I.TextColor3 = Color3.fromRGB(200, 200, 200)
 I.TextSize = 14.000
-I.TextStrokeColor3 = Color3.fromRGB(40, 40, 40)
+I.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
 I.TextStrokeTransparency = 0.000
-I.TextWrapped = true
-J.Parent = b
-J.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-J.BorderSizePixel = 0
-J.Position = UDim2.new(0.5, 0, 0.0610465109, 0)
-J.Selectable = false
-J.Size = UDim2.new(0, 70, 0, 20)
+I.TextXAlignment = Enum.TextXAlignment.Left
+J.Name = "FPS"
+J.Parent = H
+J.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+J.BackgroundTransparency = 1.000
+J.Position = UDim2.new(0.400000006, 0, 0, 0)
+J.Size = UDim2.new(0, 55, 0, 20)
 J.Font = Enum.Font.Code
-J.TextColor3 = Color3.fromRGB(170, 170, 170)
+J.Text = "60"
+J.TextColor3 = Color3.fromRGB(200, 200, 200)
 J.TextSize = 14.000
-J.TextStrokeColor3 = Color3.fromRGB(40, 40, 40)
+J.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
 J.TextStrokeTransparency = 0.000
-J.TextWrapped = true
-K.Name = "Misc"
-K.Parent = b
-K.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-K.BorderSizePixel = 0
-K.Position = UDim2.new(0.733333349, 0, 0.0610465109, 0)
-K.Selectable = false
-K.Size = UDim2.new(0, 70, 0, 20)
+K.Name = "Time"
+K.Parent = H
+K.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+K.BackgroundTransparency = 1.000
+K.Position = UDim2.new(0.675000012, 0, 0, 0)
+K.Size = UDim2.new(0, 65, 0, 20)
 K.Font = Enum.Font.Code
-K.Text = "Misc"
-K.TextColor3 = Color3.fromRGB(170, 170, 170)
+K.Text = "10:10:10"
+K.TextColor3 = Color3.fromRGB(200, 200, 200)
 K.TextSize = 14.000
-K.TextStrokeColor3 = Color3.fromRGB(40, 40, 40)
+K.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
 K.TextStrokeTransparency = 0.000
-K.TextWrapped = true
-L.Name = "Insert"
-L.Parent = b
-L.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-L.BackgroundTransparency = 1.000
-L.Position = UDim2.new(0.666666687, 0, 0, 0)
-L.Size = UDim2.new(0, 100, 0, 21)
-L.Font = Enum.Font.Code
-L.Text = "Insert"
-L.TextColor3 = Color3.fromRGB(191, 191, 191)
-L.TextSize = 15.000
-L.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
 local function X()
     local Y = Instance.new("LocalScript", c)
     Y.Parent.Text = ""
     wait(2)
-    Y.Parent.Text = "F"
+    Y.Parent.Text = "c"
     wait(0.1)
-    Y.Parent.Text = "Fl"
+    Y.Parent.Text = "ch"
     wait(0.1)
-    Y.Parent.Text = "Flo"
+    Y.Parent.Text = "chu"
     wait(0.1)
-    Y.Parent.Text = "Flop"
+    Y.Parent.Text = "chub"
     wait(0.1)
-    Y.Parent.Text = "Flopp"
+    Y.Parent.Text = "chubs"
     wait(0.1)
-    Y.Parent.Text = "Floppa"
+    Y.Parent.Text = "chubsw"
     wait(0.1)
-    Y.Parent.Text = "Floppaw"
+    Y.Parent.Text = "chubswa"
     wait(0.1)
-    Y.Parent.Text = "Floppawa"
+    Y.Parent.Text = "chubswar"
     wait(0.1)
-    Y.Parent.Text = "Floppawar"
+    Y.Parent.Text = "chubsware"
     wait(0.1)
-    Y.Parent.Text = "Floppaware"
+    Y.Parent.Text = "chubsware"
     wait(0.1)
-    Y.Parent.Text = "Floppaware "
+    Y.Parent.Text = "chubsware "
     wait(0.1)
-    Y.Parent.Text = "Floppaware b"
+    Y.Parent.Text = "chubsware b"
     wait(0.1)
-    Y.Parent.Text = "Floppaware by"
+    Y.Parent.Text = "chubsware by"
     wait(0.1)
-    Y.Parent.Text = "Floppaware by "
+    Y.Parent.Text = "chubsware by "
     wait(0.1)
-    Y.Parent.Text = "Floppaware by c"
+    Y.Parent.Text = "chubsware by c"
     wait(0.1)
-    Y.Parent.Text = "Floppaware by ch"
+    Y.Parent.Text = "chubsware by ch"
     wait(0.1)
-    Y.Parent.Text = "Floppaware by chr"
+    Y.Parent.Text = "chubsware by chr"
     wait(0.1)
-    Y.Parent.Text = "Floppaware by chro"
+    Y.Parent.Text = "chubsware by chro"
     wait(0.1)
-    Y.Parent.Text = "Floppaware by chrom"
+    Y.Parent.Text = "chubsware by chrom"
     wait(0.1)
-    Y.Parent.Text = "Floppaware by chrome"
+    Y.Parent.Text = "chubsware by chrome"
     wait(0.1)
-    Y.Parent.Text = "Floppaware by chrome#"
+    Y.Parent.Text = "chubsware by chrome#"
     wait(0.1)
-    Y.Parent.Text = "Floppaware by chrome#6"
+    Y.Parent.Text = "chubsware by chrome#6"
     wait(0.1)
-    Y.Parent.Text = "Floppaware by chrome#66"
+    Y.Parent.Text = "chubsware by chrome#66"
     wait(0.1)
-    Y.Parent.Text = "Floppaware by chrome#666"
+    Y.Parent.Text = "chubsware by chrome#666"
     wait(0.1)
-    Y.Parent.Text = "Floppaware by chrome#6660"
+    Y.Parent.Text = "chubsware by chrome#6660"
     wait(3)
-    Y.Parent.Text = "Floppaware by chrome#666"
+    Y.Parent.Text = "chubsware by chrome#666"
     wait(0.1)
-    Y.Parent.Text = "Floppaware by chrome#66"
+    Y.Parent.Text = "chubsware by chrome#66"
     wait(0.1)
-    Y.Parent.Text = "Floppaware by chrome#6"
+    Y.Parent.Text = "chubsware by chrome#6"
     wait(0.1)
-    Y.Parent.Text = "Floppaware by chrome#"
+    Y.Parent.Text = "chubsware by chrome#"
     wait(0.1)
-    Y.Parent.Text = "Floppaware by chrome"
+    Y.Parent.Text = "chubsware by chrome"
     wait(0.1)
-    Y.Parent.Text = "Floppaware by chrom"
+    Y.Parent.Text = "chubsware by chrom"
     wait(0.1)
-    Y.Parent.Text = "Floppaware by chro"
+    Y.Parent.Text = "chubsware by chro"
     wait(0.1)
-    Y.Parent.Text = "Floppaware by chr"
+    Y.Parent.Text = "chubsware by chr"
     wait(0.1)
-    Y.Parent.Text = "Floppaware by ch"
+    Y.Parent.Text = "chubsware by ch"
     wait(0.1)
-    Y.Parent.Text = "Floppaware by c"
+    Y.Parent.Text = "chubsware by c"
     wait(0.1)
-    Y.Parent.Text = "Floppaware by "
+    Y.Parent.Text = "chubsware by "
     wait(0.1)
-    Y.Parent.Text = "Floppaware by"
+    Y.Parent.Text = "chubsware by"
     wait(0.1)
-    Y.Parent.Text = "Floppaware b"
+    Y.Parent.Text = "chubsware b"
     wait(0.1)
-    Y.Parent.Text = "Floppaware "
+    Y.Parent.Text = "chubsware "
     wait(0.1)
-    Y.Parent.Text = "Floppaware"
+    Y.Parent.Text = "chubsware"
 end
 coroutine.wrap(X)()
 local function Z()
-    local Y = Instance.new("LocalScript", g)
-    Y.Parent.Parent.MouseButton1Click:Connect(
-        function()
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(145, 145, 145)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(155, 155, 155)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(175, 175, 175)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(185, 185, 185)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(195, 195, 195)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
-        end
-    )
-end
-coroutine.wrap(Z)()
-local function _()
-    local Y = Instance.new("LocalScript", i)
-    Y.Parent.Parent.MouseButton1Click:Connect(
-        function()
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(145, 145, 145)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(155, 155, 155)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(175, 175, 175)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(185, 185, 185)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(195, 195, 195)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
-        end
-    )
-end
-coroutine.wrap(_)()
-local function a0()
-    local Y = Instance.new("LocalScript", k)
-    Y.Parent.Parent.MouseButton1Click:Connect(
-        function()
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(145, 145, 145)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(155, 155, 155)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(175, 175, 175)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(185, 185, 185)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(195, 195, 195)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
-        end
-    )
-end
-coroutine.wrap(a0)()
-local function a1()
-    local Y = Instance.new("LocalScript", m)
-    Y.Parent.Parent.MouseButton1Click:Connect(
-        function()
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(145, 145, 145)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(155, 155, 155)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(175, 175, 175)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(185, 185, 185)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(195, 195, 195)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
-        end
-    )
-end
-coroutine.wrap(a1)()
-local function a2()
-    local Y = Instance.new("LocalScript", p)
-    Y.Parent.Parent.MouseButton1Click:Connect(
-        function()
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(145, 145, 145)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(155, 155, 155)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(175, 175, 175)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(185, 185, 185)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(195, 195, 195)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
-        end
-    )
-end
-coroutine.wrap(a2)()
-local function a3()
-    local Y = Instance.new("LocalScript", u)
-    Y.Parent.Parent.MouseButton1Click:Connect(
-        function()
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(145, 145, 145)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(155, 155, 155)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(175, 175, 175)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(185, 185, 185)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(195, 195, 195)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
-        end
-    )
-end
-coroutine.wrap(a3)()
-function SCRIPT_LVAP81_FAKESCRIPT()
-    local Y = Instance.new("LocalScript")
-    Y.Parent = t
-    Y.Parent.MouseButton1Click:Connect(
-        function()
-            local a4 = Y.Parent.Parent.TextBox.Text
-            for a5, a6 in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-                if string.find(string.lower(a6.Name), "boomb") then
-                    a6.Parent = game.Players.LocalPlayer.Character
+    local Y = Instance.new("LocalScript", t)
+    function SCRIPT_LVAP81_FAKESCRIPT()
+        local Y = Instance.new("LocalScript")
+        Y.Parent = t
+        Y.Parent.MouseButton1Click:Connect(
+            function()
+                local _ = Y.Parent.Parent.TextBox.Text
+                for a0, a1 in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+                    if string.find(string.lower(a1.Name), "boomb") then
+                        a1.Parent = game.Players.LocalPlayer.Character
+                    end
                 end
-            end
-            wait()
-            for U, a7 in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-                if a7:IsA("Tool") then
-                    a7.Remote:FireServer("PlaySong", a4)
-                    a7.Handle.Sound.Playing = false
+                wait()
+                for U, a2 in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+                    if a2:IsA("Tool") then
+                        a2.Remote:FireServer("PlaySong", _)
+                        a2.Handle.Sound.Playing = false
+                    end
                 end
-            end
-            wait()
-            local a8 = game.Players.LocalPlayer.Name
-            for a5, a7 in pairs(game.workspace[a8]:GetDescendants()) do
-                if a7:IsA "Sound" then
-                    if a7.IsPlaying then
-                        if
-                            a7.Name ~= "Jumping" or a7.Name ~= "FreeFalling" or a7.Name ~= "Died" or
-                                a7.Name ~= "Landing" or
-                                a7.Name ~= "Splash" or
-                                a7.Name ~= "Running" or
-                                a7.Name ~= "Swimming" or
-                                a7.Name ~= "Climbing"
-                         then
-                            a7.TimePosition = 0
+                wait()
+                local a3 = game.Players.LocalPlayer.Name
+                for a0, a2 in pairs(game.workspace[a3]:GetDescendants()) do
+                    if a2:IsA "Sound" then
+                        if a2.IsPlaying then
+                            if
+                                a2.Name ~= "Jumping" or a2.Name ~= "FreeFalling" or a2.Name ~= "Died" or
+                                    a2.Name ~= "Landing" or
+                                    a2.Name ~= "Splash" or
+                                    a2.Name ~= "Running" or
+                                    a2.Name ~= "Swimming" or
+                                    a2.Name ~= "Climbing"
+                             then
+                                a2.TimePosition = 0
+                            end
                         end
                     end
                 end
             end
-        end
-    )
-end
-coroutine.resume(coroutine.create(SCRIPT_LVAP81_FAKESCRIPT))
-local function a9()
-    local Y = Instance.new("LocalScript", w)
-    Y.Parent.Parent.MouseButton1Click:Connect(
-        function()
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(145, 145, 145)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(155, 155, 155)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(175, 175, 175)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(185, 185, 185)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(195, 195, 195)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
-        end
-    )
-end
-coroutine.wrap(a9)()
-local function aa()
-    local Y = Instance.new("LocalScript", z)
-    Y.Parent.Parent.MouseButton1Click:Connect(
-        function()
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(145, 145, 145)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(155, 155, 155)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(175, 175, 175)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(185, 185, 185)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(195, 195, 195)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
-        end
-    )
-end
-coroutine.wrap(aa)()
-local function ab()
-    local Y = Instance.new("LocalScript", C)
-    Y.Parent.Parent.MouseButton1Click:Connect(
-        function()
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(145, 145, 145)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(155, 155, 155)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(175, 175, 175)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(185, 185, 185)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(195, 195, 195)
-            wait(.1)
-            Y.Parent.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
-        end
-    )
-end
-coroutine.wrap(ab)()
-local function ac()
-    local Y = Instance.new("LocalScript", b)
-    local ad = game:GetService("UserInputService")
-    local ae = Y.Parent
-    local af
-    local ag
-    local ah
-    local ai
-    local function aj(ak)
-        local al = ak.Position - ah
-        ae.Position = UDim2.new(ai.X.Scale, ai.X.Offset + al.X, ai.Y.Scale, ai.Y.Offset + al.Y)
+        )
     end
-    ae.InputBegan:Connect(
-        function(ak)
-            if ak.UserInputType == Enum.UserInputType.MouseButton1 or ak.UserInputType == Enum.UserInputType.Touch then
-                af = true
-                ah = ak.Position
-                ai = ae.Position
-                ak.Changed:Connect(
+    coroutine.resume(coroutine.create(SCRIPT_LVAP81_FAKESCRIPT))
+end
+coroutine.wrap(Z)()
+local function a4()
+    local Y = Instance.new("LocalScript", b)
+    local a5 = game:GetService("UserInputService")
+    local a6 = Y.Parent
+    local a7
+    local a8
+    local a9
+    local aa
+    local function ab(ac)
+        local ad = ac.Position - a9
+        a6.Position = UDim2.new(aa.X.Scale, aa.X.Offset + ad.X, aa.Y.Scale, aa.Y.Offset + ad.Y)
+    end
+    a6.InputBegan:Connect(
+        function(ac)
+            if ac.UserInputType == Enum.UserInputType.MouseButton1 or ac.UserInputType == Enum.UserInputType.Touch then
+                a7 = true
+                a9 = ac.Position
+                aa = a6.Position
+                ac.Changed:Connect(
                     function()
-                        if ak.UserInputState == Enum.UserInputState.End then
-                            af = false
+                        if ac.UserInputState == Enum.UserInputState.End then
+                            a7 = false
                         end
                     end
                 )
             end
         end
     )
-    ae.InputChanged:Connect(
-        function(ak)
-            if ak.UserInputType == Enum.UserInputType.MouseMovement or ak.UserInputType == Enum.UserInputType.Touch then
-                ag = ak
+    a6.InputChanged:Connect(
+        function(ac)
+            if ac.UserInputType == Enum.UserInputType.MouseMovement or ac.UserInputType == Enum.UserInputType.Touch then
+                a8 = ac
             end
         end
     )
-    ad.InputChanged:Connect(
-        function(ak)
-            if ak == ag and af then
-                aj(ak)
+    a5.InputChanged:Connect(
+        function(ac)
+            if ac == a8 and a7 then
+                ab(ac)
             end
         end
     )
 end
-coroutine.wrap(ac)()
-local function am()
-    local Y = Instance.new("LocalScript", L)
+coroutine.wrap(a4)()
+local function ae()
+    local Y = Instance.new("LocalScript", F)
     Y.Parent.TextTransparency = 1
     wait(9)
     Y.Parent.TextTransparency = 0.95
@@ -1001,22 +981,97 @@ local function am()
     wait(.1)
     Y.Parent.TextTransparency = 1
 end
-coroutine.wrap(am)()
-local function an()
+coroutine.wrap(ae)()
+local function af()
     local Y = Instance.new("LocalScript", a)
-    local ao = game:GetService("Players").LocalPlayer.PlayerGui["Floppaware"]
-    local ap = false
-    function onKeyPress(aq, ar, as)
-        if ar == Enum.UserInputState.Begin then
-            if ap == false then
-                ap = true
-                ao.Enabled = true
+    local ag = game:GetService("Players").LocalPlayer.PlayerGui["Floppaware"]
+    local ah = true
+    function onKeyPress(ai, aj, ak)
+        if aj == Enum.UserInputState.Begin then
+            if ah == false then
+                ah = true
+                ag.Enabled = true
             else
-                ap = false
-                ao.Enabled = false
+                ah = false
+                ag.Enabled = false
             end
         end
     end
     game.ContextActionService:BindAction("keyPress", onKeyPress, false, Enum.KeyCode.Insert)
 end
-coroutine.wrap(an)()
+coroutine.wrap(af)()
+local function al()
+    local Y = Instance.new("LocalScript", H)
+    local a5 = game:GetService("UserInputService")
+    local a6 = Y.Parent
+    local a7
+    local a8
+    local a9
+    local aa
+    local function ab(ac)
+        local ad = ac.Position - a9
+        a6.Position = UDim2.new(aa.X.Scale, aa.X.Offset + ad.X, aa.Y.Scale, aa.Y.Offset + ad.Y)
+    end
+    a6.InputBegan:Connect(
+        function(ac)
+            if ac.UserInputType == Enum.UserInputType.MouseButton1 or ac.UserInputType == Enum.UserInputType.Touch then
+                a7 = true
+                a9 = ac.Position
+                aa = a6.Position
+                ac.Changed:Connect(
+                    function()
+                        if ac.UserInputState == Enum.UserInputState.End then
+                            a7 = false
+                        end
+                    end
+                )
+            end
+        end
+    )
+    a6.InputChanged:Connect(
+        function(ac)
+            if ac.UserInputType == Enum.UserInputType.MouseMovement or ac.UserInputType == Enum.UserInputType.Touch then
+                a8 = ac
+            end
+        end
+    )
+    a5.InputChanged:Connect(
+        function(ac)
+            if ac == a8 and a7 then
+                ab(ac)
+            end
+        end
+    )
+end
+coroutine.wrap(al)()
+local function am()
+    local Y = Instance.new("LocalScript", H)
+    while wait() do
+        local an = os.date("*t")
+        local K = Y.Parent:WaitForChild("Time")
+        K.Text = an.hour .. ":" .. an.min .. ":" .. an.sec
+    end
+end
+coroutine.wrap(am)()
+local function ao()
+    local Y = Instance.new("LocalScript", J)
+    local ap = tick()
+    local L = 0
+    local M = game:GetService("RunService").Heartbeat
+    local O, P
+    local Q = {}
+    local function R()
+        O = tick()
+        for S = #Q, 1, -1 do
+            Q[S + 1] = Q[S] >= O - 1 and Q[S] or nil
+        end
+        Q[1] = O
+        local T = tick() - P >= 1 and #Q or #Q / (tick() - P)
+        T = math.floor(T)
+        L = L + 1
+        Y.Parent.Text = tostring(T)
+    end
+    P = tick()
+    M:Connect(R)
+end
+coroutine.wrap(ao)()
