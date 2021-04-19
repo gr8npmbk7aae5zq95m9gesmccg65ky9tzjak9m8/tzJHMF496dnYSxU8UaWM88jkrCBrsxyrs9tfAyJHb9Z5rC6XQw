@@ -242,7 +242,7 @@ k.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
 k.TextStrokeTransparency = 0.000
 k.MouseButton1Click:Connect(
     function()
-        while wait() do
+        while wait(1) do
             game:GetService("Players").LocalPlayer.PlayerGui.HUD.HP.Size = UDim2.new(0.09, 10, 0, 10)
             game:GetService("Players").LocalPlayer.PlayerGui.HUD.HP.Bar.BackgroundColor3 = Color3.fromRGB(255, 100, 100)
             game:GetService("Players").LocalPlayer.PlayerGui.HUD.HP.Position = UDim2.new(0.35, 0, 0.91, 0)
@@ -309,7 +309,7 @@ n.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
 n.TextStrokeTransparency = 0.000
 n.MouseButton1Click:Connect(
     function()
-        while wait() do
+        while wait(1) do
             game:GetService("Players").LocalPlayer.PlayerGui.HUD.ImageButton.Visible = false
             game:GetService("Players").LocalPlayer.PlayerGui.HUD.Cash.Visible = false
             game:GetService("Players").LocalPlayer.PlayerGui.HUD.Mute.Visible = false
