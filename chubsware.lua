@@ -242,19 +242,17 @@ k.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
 k.TextStrokeTransparency = 0.000
 k.MouseButton1Click:Connect(
     function()
-        while wait(1) do
+    game:service'RunService'.RenderStepped:Connect(function()
             game:GetService("Players").LocalPlayer.PlayerGui.HUD.HP.Size = UDim2.new(0.09, 10, 0, 10)
             game:GetService("Players").LocalPlayer.PlayerGui.HUD.HP.Bar.BackgroundColor3 = Color3.fromRGB(255, 100, 100)
             game:GetService("Players").LocalPlayer.PlayerGui.HUD.HP.Position = UDim2.new(0.35, 0, 0.91, 0)
             game:GetService("Players").LocalPlayer.PlayerGui.HUD.Stam.Size = UDim2.new(0.09, 10, 0, 10)
-            game:GetService("Players").LocalPlayer.PlayerGui.HUD.Stam.Bar.BackgroundColor3 =
-                Color3.fromRGB(150, 255, 150)
+            game:GetService("Players").LocalPlayer.PlayerGui.HUD.Stam.Bar.BackgroundColor3 = Color3.fromRGB(150, 255, 150)
             game:GetService("Players").LocalPlayer.PlayerGui.HUD.Stam.Position = UDim2.new(0.555, 0, 0.91, 0)
             game:GetService("Players").LocalPlayer.PlayerGui.HUD.KO.Size = UDim2.new(0.09, 10, 0, 10)
             game:GetService("Players").LocalPlayer.PlayerGui.HUD.KO.Bar.BackgroundColor3 = Color3.fromRGB(150, 200, 255)
             game:GetService("Players").LocalPlayer.PlayerGui.HUD.KO.Position = UDim2.new(0.4525, 0, 0.91, 0)
-            wait()
-        end
+        end)
     end
 )
 l.Name = "Freecam"
@@ -309,16 +307,14 @@ n.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
 n.TextStrokeTransparency = 0.000
 n.MouseButton1Click:Connect(
     function()
-        while wait(1) do
-            game:GetService("Players").LocalPlayer.PlayerGui.HUD.ImageButton.Visible = false
-            game:GetService("Players").LocalPlayer.PlayerGui.HUD.Cash.Visible = false
-            game:GetService("Players").LocalPlayer.PlayerGui.HUD.Mute.Visible = false
-            game:GetService("CoreGui").TopBar.TopBarFrame.LeftFrame.ChatIcon.BadgeContainer.Visible = false
-            game:GetService("CoreGui").TopBar.TopBarFrame.RightFrame.Visible = false
-            wait()
-        end
-    end
-)
+    game:service'RunService'.RenderStepped:Connect(function()
+            game:GetService("Players").LocalPlayer.PlayerGui.HUD.ImageButton:Destroy()
+            game:GetService("Players").LocalPlayer.PlayerGui.HUD.Cash:Destroy()
+            game:GetService("Players").LocalPlayer.PlayerGui.HUD.Mute:Destroy()
+            game:GetService("CoreGui").TopBar.TopBarFrame.LeftFrame.ChatIcon.BadgeContainer:Destroy()
+            game:GetService("CoreGui").TopBar.TopBarFrame.RightFrame:Destroy()
+    end)
+end)
 o.Name = "Frame3"
 o.Parent = d
 o.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
