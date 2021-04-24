@@ -458,7 +458,7 @@ x.MouseButton1Down:connect(
         P.Enabled = true
         P.Size = 1.5
         Q.Parent = L
-        Q.Brightness = 0.1
+        Q.Brightness = 0.08
         Q.Contrast = 0.39
         Q.Enabled = true
         Q.Saturation = -0.35
@@ -515,7 +515,7 @@ z.MouseButton1Down:connect(
         P.Enabled = true
         P.Size = 1.5
         Q.Parent = L
-        Q.Brightness = 0.01
+        Q.Brightness = 0.08
         Q.Contrast = 0.39
         Q.Enabled = true
         Q.Saturation = -0.35
@@ -561,7 +561,7 @@ A.MouseButton1Down:connect(
         P.Enabled = true
         P.Size = 1.5
         Q.Parent = L
-        Q.Brightness = 0.01
+        Q.Brightness = 0.08
         Q.Contrast = 0.39
         Q.Enabled = true
         Q.Saturation = -0.35
@@ -607,7 +607,7 @@ B.MouseButton1Down:connect(
         P.Enabled = true
         P.Size = 1.5
         Q.Parent = L
-        Q.Brightness = 0.01
+        Q.Brightness = 0.08
         Q.Contrast = 0.39
         Q.Enabled = true
         Q.Saturation = -0.35
@@ -727,86 +727,36 @@ K.TextStrokeTransparency = 0.000
 local function X()
     local Y = Instance.new("LocalScript", c)
     Y.Parent.Text = ""
-    wait(2)
-    Y.Parent.Text = "c"
+    wait(1)
+    Y.Parent.Text = "f"
     wait(0.1)
-    Y.Parent.Text = "ch"
+    Y.Parent.Text = "fl"
     wait(0.1)
-    Y.Parent.Text = "chu"
+    Y.Parent.Text = "flo"
     wait(0.1)
-    Y.Parent.Text = "chub"
+    Y.Parent.Text = "floy"
     wait(0.1)
-    Y.Parent.Text = "chubs"
+    Y.Parent.Text = "floyd"
     wait(0.1)
-    Y.Parent.Text = "chubsw"
+    Y.Parent.Text = "floyd."
     wait(0.1)
-    Y.Parent.Text = "chubswa"
+    Y.Parent.Text = "floyd.s"
     wait(0.1)
-    Y.Parent.Text = "chubswar"
+    Y.Parent.Text = "floyd.so"
     wait(0.1)
-    Y.Parent.Text = "chubsware"
+    Y.Parent.Text = "floyd.sol"
     wait(0.1)
-    Y.Parent.Text = "chubsware"
+    Y.Parent.Text = "floyd.solu"
     wait(0.1)
-    Y.Parent.Text = "chubsware "
+    Y.Parent.Text = "floyd.solut"
     wait(0.1)
-    Y.Parent.Text = "chubsware b"
+    Y.Parent.Text = "floyd.soluti"
     wait(0.1)
-    Y.Parent.Text = "chubsware by"
+    Y.Parent.Text = "floyd.solutio"
     wait(0.1)
-    Y.Parent.Text = "chubsware by "
+    Y.Parent.Text = "floyd.solution"
     wait(0.1)
-    Y.Parent.Text = "chubsware by c"
-    wait(0.1)
-    Y.Parent.Text = "chubsware by ch"
-    wait(0.1)
-    Y.Parent.Text = "chubsware by chr"
-    wait(0.1)
-    Y.Parent.Text = "chubsware by chro"
-    wait(0.1)
-    Y.Parent.Text = "chubsware by chrom"
-    wait(0.1)
-    Y.Parent.Text = "chubsware by chrome"
-    wait(0.1)
-    Y.Parent.Text = "chubsware by chrome#"
-    wait(0.1)
-    Y.Parent.Text = "chubsware by chrome#6"
-    wait(0.1)
-    Y.Parent.Text = "chubsware by chrome#66"
-    wait(0.1)
-    Y.Parent.Text = "chubsware by chrome#666"
-    wait(0.1)
-    Y.Parent.Text = "chubsware by chrome#6660"
-    wait(3)
-    Y.Parent.Text = "chubsware by chrome#666"
-    wait(0.1)
-    Y.Parent.Text = "chubsware by chrome#66"
-    wait(0.1)
-    Y.Parent.Text = "chubsware by chrome#6"
-    wait(0.1)
-    Y.Parent.Text = "chubsware by chrome#"
-    wait(0.1)
-    Y.Parent.Text = "chubsware by chrome"
-    wait(0.1)
-    Y.Parent.Text = "chubsware by chrom"
-    wait(0.1)
-    Y.Parent.Text = "chubsware by chro"
-    wait(0.1)
-    Y.Parent.Text = "chubsware by chr"
-    wait(0.1)
-    Y.Parent.Text = "chubsware by ch"
-    wait(0.1)
-    Y.Parent.Text = "chubsware by c"
-    wait(0.1)
-    Y.Parent.Text = "chubsware by "
-    wait(0.1)
-    Y.Parent.Text = "chubsware by"
-    wait(0.1)
-    Y.Parent.Text = "chubsware b"
-    wait(0.1)
-    Y.Parent.Text = "chubsware "
-    wait(0.1)
-    Y.Parent.Text = "chubsware"
+    Y.Parent.Text = "floyd.solutions"
 end
 coroutine.wrap(X)()
 local function Z()
@@ -900,7 +850,7 @@ coroutine.wrap(a4)()
 local function ae()
     local Y = Instance.new("LocalScript", F)
     Y.Parent.TextTransparency = 1
-    wait(9)
+    wait(4)
     Y.Parent.TextTransparency = 0.95
     wait(.1)
     Y.Parent.TextTransparency = 0.9
