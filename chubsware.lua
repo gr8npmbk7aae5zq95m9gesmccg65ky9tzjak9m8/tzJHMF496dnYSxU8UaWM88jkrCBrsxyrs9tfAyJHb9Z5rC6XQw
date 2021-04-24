@@ -690,7 +690,7 @@ I.Position = UDim2.new(0.0499993898, 0, -0.0499995947, 0)
 I.Size = UDim2.new(0, 120, 0, 20)
 I.SizeConstraint = Enum.SizeConstraint.RelativeXX
 I.Font = Enum.Font.Code
-I.Text = "chubsware"
+I.Text = "floyd.solutions"
 I.TextColor3 = Color3.fromRGB(200, 200, 200)
 I.TextSize = 14.000
 I.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
@@ -700,7 +700,7 @@ J.Name = "FPS"
 J.Parent = H
 J.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 J.BackgroundTransparency = 1.000
-J.Position = UDim2.new(0.400000006, 0, 0, 0)
+J.Position = UDim2.new(0.540000006, 0, 0, 0)
 J.Size = UDim2.new(0, 55, 0, 20)
 J.Font = Enum.Font.Code
 J.Text = "60"
@@ -712,10 +712,10 @@ K.Name = "Time"
 K.Parent = H
 K.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 K.BackgroundTransparency = 1.000
-K.Position = UDim2.new(0.675000012, 0, 0, 0)
+K.Position = UDim2.new(0.695000012, 0, 0, 0)
 K.Size = UDim2.new(0, 65, 0, 20)
 K.Font = Enum.Font.Code
-K.Text = "10:10:10"
+K.Text = "999:999"
 K.TextColor3 = Color3.fromRGB(200, 200, 200)
 K.TextSize = 14.000
 K.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
@@ -995,7 +995,7 @@ local function am()
     while wait() do
         local an = os.date("*t")
         local K = Y.Parent:WaitForChild("Time")
-        K.Text = an.hour .. ":" .. an.min .. ":" .. an.sec
+        K.Text = an.hour .. ":" .. an.min
     end
 end
 coroutine.wrap(am)()
